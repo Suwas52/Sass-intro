@@ -1,9 +1,10 @@
 
 .banner-part{
-    width: 100vw;
-    position: relative;
-    
-    @include flex(wrap,center,center);
+    .banner-slider{
+        width: 100vw;
+        position: relative;
+        @include flex(wrap,center,center);
+    }
 
     &:before{
         content: '';
@@ -228,5 +229,35 @@
         quotes: none;
         display: inline-block;
         vertical-align: top;
+    }
+
+    .slick-arrow {
+        font-size: 52px;
+        color: $red;
+        line-height: 1;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%);
+
+        &.slick-next {
+            right: 0;
+        }
+
+        &.slick-prev {
+            left: 0;
+        }
+
+        i {
+            @include animate(color, 0.35s, linear)
+        }
+
+        &:hover {
+            i {
+            color: darken($red,10%);
+            }
+        }
+    }
+    .feedback-slider {
+        padding: 0 60px;
     }
 }

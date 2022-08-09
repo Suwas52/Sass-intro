@@ -23,7 +23,7 @@
         content: '';
         width: 42px;
         height: 42px;
-        background: url('../') no-repeat center center/cover;
+        background: url('/img/icon1.png') no-repeat center center/cover;
         display: block;
         position: absolute;
         top: 9px;
@@ -118,6 +118,11 @@
         flex: 1;
         padding: 0 10px;
     }
+}
+
+.slick-arrow{
+    border: none;
+    background: none;
 }
 
 
